@@ -1,0 +1,357 @@
+2026-10-20 16:18:54.037 Uvicorn server started on :::8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.38:8501
+  External URL: http://181.68.173.247:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+2026-10-20 16:18:58.189 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.38:8501
+  External URL: http://181.68.173.247:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m103[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m100 [0m[2m│   │   │   [0mbetas = calib[[33m"[0m[33mbetas[0m[33m"[0m] [94mif[0m calib [94melse[0m [94mNone[0m                          [31m [0m
+[31m [0m   [2m101 [0m[2m│   │   │   [0mdf_opps = QuantAutobot.run_autonomous_scan(treasury, alphas, betas [31m [0m
+[31m [0m   [2m102 [0m[2m│   │   │   [0m[94mif[0m [95mnot[0m df_opps.empty:                                              [31m [0m
+[31m [0m [31m❱ [0m103 [2m│   │   │   │   [0mst.dataframe([1;4mdf_opps[[[0m[1;4;33m"[0m[1;4;33mPartido[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mMercado[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mProb_Modelo[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mCu[0m [31m [0m
+[31m [0m   [2m104 [0m[2m│   │   │   [0m[94melse[0m:                                                              [31m [0m
+[31m [0m   [2m105 [0m[2m│   │   │   │   [0mst.info([33m"[0m[33mSin oportunidades con umbral EV > 2.5[0m[33m% e[0m[33mn este moment[0m [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/[0m[1;33mfr[0m [31m [0m
+[31m [0m [1;33mame.py[0m:[94m4119[0m in [92m__getitem__[0m                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 4116 [0m[2m│   │   [0m[94melse[0m:                                                                [31m [0m
+[31m [0m   [2m 4117 [0m[2m│   │   │   [0m[94mif[0m is_iterator(key):                                             [31m [0m
+[31m [0m   [2m 4118 [0m[2m│   │   │   │   [0mkey = [96mlist[0m(key)                                              [31m [0m
+[31m [0m [31m❱ [0m 4119 [2m│   │   │   [0mindexer = [1;4;96mself[0m[1;4m.columns._get_indexer_strict(key, [0m[1;4;33m"[0m[1;4;33mcolumns[0m[1;4;33m"[0m[1;4m)[0m[[94m1[0m]    [31m [0m
+[31m [0m   [2m 4120 [0m[2m│   │   [0m                                                                     [31m [0m
+[31m [0m   [2m 4121 [0m[2m│   │   [0m[2m# take() does not accept boolean indexers[0m                            [31m [0m
+[31m [0m   [2m 4122 [0m[2m│   │   [0m[94mif[0m [96mgetattr[0m(indexer, [33m"[0m[33mdtype[0m[33m"[0m, [94mNone[0m) == [96mbool[0m:                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/in[0m [31m [0m
+[31m [0m [2;33mdexes/[0m[1;33mbase.py[0m:[94m6212[0m in [92m_get_indexer_strict[0m                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m6209 [0m[2m│   │   [0m[94melse[0m:                                                                 [31m [0m
+[31m [0m   [2m6210 [0m[2m│   │   │   [0mkeyarr, indexer, new_indexer = [96mself[0m._reindex_non_unique(keyarr)   [31m [0m
+[31m [0m   [2m6211 [0m[2m│   │   [0m                                                                      [31m [0m
+[31m [0m [31m❱ [0m6212 [2m│   │   [0m[1;4;96mself[0m[1;4m._raise_if_missing(keyarr, indexer, axis_name)[0m                    [31m [0m
+[31m [0m   [2m6213 [0m[2m│   │   [0m                                                                      [31m [0m
+[31m [0m   [2m6214 [0m[2m│   │   [0mkeyarr = [96mself[0m.take(indexer)                                           [31m [0m
+[31m [0m   [2m6215 [0m[2m│   │   [0m[94mif[0m [96misinstance[0m(key, Index):                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/in[0m [31m [0m
+[31m [0m [2;33mdexes/[0m[1;33mbase.py[0m:[94m6264[0m in [92m_raise_if_missing[0m                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m6261 [0m[2m│   │   │   │   [0m[94mraise[0m [96mKeyError[0m([33mf[0m[33m"[0m[33mNone of [[0m[33m{[0mkey[33m}[0m[33m] are in the [[0m[33m{[0maxis_name[33m}[0m[33m][0m[33m"[0m)   [31m [0m
+[31m [0m   [2m6262 [0m[2m│   │   │   [0m                                                                  [31m [0m
+[31m [0m   [2m6263 [0m[2m│   │   │   [0mnot_found = [96mlist[0m(ensure_index(key)[missing_mask.nonzero()[[94m0[0m]].uni [31m [0m
+[31m [0m [31m❱ [0m6264 [2m│   │   │   [0m[1;4;94mraise[0m[1;4m [0m[1;4;96mKeyError[0m[1;4m([0m[1;4;33mf[0m[1;4;33m"[0m[1;4;33m{[0m[1;4mnot_found[0m[1;4;33m}[0m[1;4;33m not in index[0m[1;4;33m"[0m[1;4m)[0m                       [31m [0m
+[31m [0m   [2m6265 [0m[2m│   [0m                                                                          [31m [0m
+[31m [0m   [2m6266 [0m[2m│   [0m[1;95m@overload[0m                                                                 [31m [0m
+[31m [0m   [2m6267 [0m[2m│   [0m[94mdef[0m[90m [0m[92m_get_indexer_non_comparable[0m(                                          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mKeyError: [0m[32m"[0m[32m[[0m[32m'Cuota_Mercado'[0m[32m][0m[32m not in index"[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m109[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m   [2m107 [0m[94mwith[0m t2:                                                                       [31m [0m
+[31m [0m   [2m108 [0m[2m│   [0mst.subheader([33m"[0m[33m2. Calibración MLE con Decaimiento Temporal (ξ)[0m[33m"[0m)            [31m [0m
+[31m [0m [31m❱ [0m109 [2m│   [0mleague = st.selectbox([33m"[0m[33mSeleccionar Liga[0m[33m"[0m, [96mlist[0m([1;4mDataIngestor.LEAGUES[0m.keys() [31m [0m
+[31m [0m   [2m110 [0m[2m│   [0mxi = st.slider([33m"[0m[33mDecaimiento Temporal (ξ)[0m[33m"[0m, [94m0.0[0m, [94m0.005[0m, [94m0.0015[0m, [94m0.0005[0m)     [31m [0m
+[31m [0m   [2m111 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m112 [0m[2m│   [0m[94mif[0m st.button([33m"[0m[33m⚡ Ejecutar Ingesta Histórica y Optimización MLE[0m[33m"[0m):          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mtype object [32m'DataIngestor'[0m has no attribute [32m'LEAGUES'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m109[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m   [2m107 [0m[94mwith[0m t2:                                                                       [31m [0m
+[31m [0m   [2m108 [0m[2m│   [0mst.subheader([33m"[0m[33m2. Calibración MLE con Decaimiento Temporal (ξ)[0m[33m"[0m)            [31m [0m
+[31m [0m [31m❱ [0m109 [2m│   [0mleague = st.selectbox([33m"[0m[33mSeleccionar Liga[0m[33m"[0m, [96mlist[0m([1;4mDataIngestor.LEAGUES[0m.keys() [31m [0m
+[31m [0m   [2m110 [0m[2m│   [0mxi = st.slider([33m"[0m[33mDecaimiento Temporal (ξ)[0m[33m"[0m, [94m0.0[0m, [94m0.005[0m, [94m0.0015[0m, [94m0.0005[0m)     [31m [0m
+[31m [0m   [2m111 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m112 [0m[2m│   [0m[94mif[0m st.button([33m"[0m[33m⚡ Ejecutar Ingesta Histórica y Optimización MLE[0m[33m"[0m):          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mtype object [32m'DataIngestor'[0m has no attribute [32m'LEAGUES'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m109[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m   [2m107 [0m[94mwith[0m t2:                                                                       [31m [0m
+[31m [0m   [2m108 [0m[2m│   [0mst.subheader([33m"[0m[33m2. Calibración MLE con Decaimiento Temporal (ξ)[0m[33m"[0m)            [31m [0m
+[31m [0m [31m❱ [0m109 [2m│   [0mleague = st.selectbox([33m"[0m[33mSeleccionar Liga[0m[33m"[0m, [96mlist[0m([1;4mDataIngestor.LEAGUES[0m.keys() [31m [0m
+[31m [0m   [2m110 [0m[2m│   [0mxi = st.slider([33m"[0m[33mDecaimiento Temporal (ξ)[0m[33m"[0m, [94m0.0[0m, [94m0.005[0m, [94m0.0015[0m, [94m0.0005[0m)     [31m [0m
+[31m [0m   [2m111 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m112 [0m[2m│   [0m[94mif[0m st.button([33m"[0m[33m⚡ Ejecutar Ingesta Histórica y Optimización MLE[0m[33m"[0m):          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mtype object [32m'DataIngestor'[0m has no attribute [32m'LEAGUES'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m109[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m   [2m107 [0m[94mwith[0m t2:                                                                       [31m [0m
+[31m [0m   [2m108 [0m[2m│   [0mst.subheader([33m"[0m[33m2. Calibración MLE con Decaimiento Temporal (ξ)[0m[33m"[0m)            [31m [0m
+[31m [0m [31m❱ [0m109 [2m│   [0mleague = st.selectbox([33m"[0m[33mSeleccionar Liga[0m[33m"[0m, [96mlist[0m([1;4mDataIngestor.LEAGUES[0m.keys() [31m [0m
+[31m [0m   [2m110 [0m[2m│   [0mxi = st.slider([33m"[0m[33mDecaimiento Temporal (ξ)[0m[33m"[0m, [94m0.0[0m, [94m0.005[0m, [94m0.0015[0m, [94m0.0005[0m)     [31m [0m
+[31m [0m   [2m111 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m112 [0m[2m│   [0m[94mif[0m st.button([33m"[0m[33m⚡ Ejecutar Ingesta Histórica y Optimización MLE[0m[33m"[0m):          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mtype object [32m'DataIngestor'[0m has no attribute [32m'LEAGUES'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m103[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m100 [0m[2m│   │   │   [0mbetas = calib[[33m"[0m[33mbetas[0m[33m"[0m] [94mif[0m calib [94melse[0m [94mNone[0m                          [31m [0m
+[31m [0m   [2m101 [0m[2m│   │   │   [0mdf_opps = QuantAutobot.run_autonomous_scan(treasury, alphas, betas [31m [0m
+[31m [0m   [2m102 [0m[2m│   │   │   [0m[94mif[0m [95mnot[0m df_opps.empty:                                              [31m [0m
+[31m [0m [31m❱ [0m103 [2m│   │   │   │   [0mst.dataframe([1;4mdf_opps[[[0m[1;4;33m"[0m[1;4;33mPartido[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mMercado[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mProb_Modelo[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mCu[0m [31m [0m
+[31m [0m   [2m104 [0m[2m│   │   │   [0m[94melse[0m:                                                              [31m [0m
+[31m [0m   [2m105 [0m[2m│   │   │   │   [0mst.info([33m"[0m[33mSin oportunidades con umbral EV > 2.5[0m[33m% e[0m[33mn este moment[0m [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/[0m[1;33mfr[0m [31m [0m
+[31m [0m [1;33mame.py[0m:[94m4119[0m in [92m__getitem__[0m                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 4116 [0m[2m│   │   [0m[94melse[0m:                                                                [31m [0m
+[31m [0m   [2m 4117 [0m[2m│   │   │   [0m[94mif[0m is_iterator(key):                                             [31m [0m
+[31m [0m   [2m 4118 [0m[2m│   │   │   │   [0mkey = [96mlist[0m(key)                                              [31m [0m
+[31m [0m [31m❱ [0m 4119 [2m│   │   │   [0mindexer = [1;4;96mself[0m[1;4m.columns._get_indexer_strict(key, [0m[1;4;33m"[0m[1;4;33mcolumns[0m[1;4;33m"[0m[1;4m)[0m[[94m1[0m]    [31m [0m
+[31m [0m   [2m 4120 [0m[2m│   │   [0m                                                                     [31m [0m
+[31m [0m   [2m 4121 [0m[2m│   │   [0m[2m# take() does not accept boolean indexers[0m                            [31m [0m
+[31m [0m   [2m 4122 [0m[2m│   │   [0m[94mif[0m [96mgetattr[0m(indexer, [33m"[0m[33mdtype[0m[33m"[0m, [94mNone[0m) == [96mbool[0m:                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/in[0m [31m [0m
+[31m [0m [2;33mdexes/[0m[1;33mbase.py[0m:[94m6212[0m in [92m_get_indexer_strict[0m                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m6209 [0m[2m│   │   [0m[94melse[0m:                                                                 [31m [0m
+[31m [0m   [2m6210 [0m[2m│   │   │   [0mkeyarr, indexer, new_indexer = [96mself[0m._reindex_non_unique(keyarr)   [31m [0m
+[31m [0m   [2m6211 [0m[2m│   │   [0m                                                                      [31m [0m
+[31m [0m [31m❱ [0m6212 [2m│   │   [0m[1;4;96mself[0m[1;4m._raise_if_missing(keyarr, indexer, axis_name)[0m                    [31m [0m
+[31m [0m   [2m6213 [0m[2m│   │   [0m                                                                      [31m [0m
+[31m [0m   [2m6214 [0m[2m│   │   [0mkeyarr = [96mself[0m.take(indexer)                                           [31m [0m
+[31m [0m   [2m6215 [0m[2m│   │   [0m[94mif[0m [96misinstance[0m(key, Index):                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/in[0m [31m [0m
+[31m [0m [2;33mdexes/[0m[1;33mbase.py[0m:[94m6264[0m in [92m_raise_if_missing[0m                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m6261 [0m[2m│   │   │   │   [0m[94mraise[0m [96mKeyError[0m([33mf[0m[33m"[0m[33mNone of [[0m[33m{[0mkey[33m}[0m[33m] are in the [[0m[33m{[0maxis_name[33m}[0m[33m][0m[33m"[0m)   [31m [0m
+[31m [0m   [2m6262 [0m[2m│   │   │   [0m                                                                  [31m [0m
+[31m [0m   [2m6263 [0m[2m│   │   │   [0mnot_found = [96mlist[0m(ensure_index(key)[missing_mask.nonzero()[[94m0[0m]].uni [31m [0m
+[31m [0m [31m❱ [0m6264 [2m│   │   │   [0m[1;4;94mraise[0m[1;4m [0m[1;4;96mKeyError[0m[1;4m([0m[1;4;33mf[0m[1;4;33m"[0m[1;4;33m{[0m[1;4mnot_found[0m[1;4;33m}[0m[1;4;33m not in index[0m[1;4;33m"[0m[1;4m)[0m                       [31m [0m
+[31m [0m   [2m6265 [0m[2m│   [0m                                                                          [31m [0m
+[31m [0m   [2m6266 [0m[2m│   [0m[1;95m@overload[0m                                                                 [31m [0m
+[31m [0m   [2m6267 [0m[2m│   [0m[94mdef[0m[90m [0m[92m_get_indexer_non_comparable[0m(                                          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mKeyError: [0m[32m"[0m[32m[[0m[32m'Cuota_Mercado'[0m[32m][0m[32m not in index"[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m109[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m   [2m107 [0m[94mwith[0m t2:                                                                       [31m [0m
+[31m [0m   [2m108 [0m[2m│   [0mst.subheader([33m"[0m[33m2. Calibración MLE con Decaimiento Temporal (ξ)[0m[33m"[0m)            [31m [0m
+[31m [0m [31m❱ [0m109 [2m│   [0mleague = st.selectbox([33m"[0m[33mSeleccionar Liga[0m[33m"[0m, [96mlist[0m([1;4mDataIngestor.LEAGUES[0m.keys() [31m [0m
+[31m [0m   [2m110 [0m[2m│   [0mxi = st.slider([33m"[0m[33mDecaimiento Temporal (ξ)[0m[33m"[0m, [94m0.0[0m, [94m0.005[0m, [94m0.0015[0m, [94m0.0005[0m)     [31m [0m
+[31m [0m   [2m111 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m112 [0m[2m│   [0m[94mif[0m st.button([33m"[0m[33m⚡ Ejecutar Ingesta Histórica y Optimización MLE[0m[33m"[0m):          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mtype object [32m'DataIngestor'[0m has no attribute [32m'LEAGUES'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m103[0m in [92m<module>[0m                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m100 [0m[2m│   │   │   [0mbetas = calib[[33m"[0m[33mbetas[0m[33m"[0m] [94mif[0m calib [94melse[0m [94mNone[0m                          [31m [0m
+[31m [0m   [2m101 [0m[2m│   │   │   [0mdf_opps = QuantAutobot.run_autonomous_scan(treasury, alphas, betas [31m [0m
+[31m [0m   [2m102 [0m[2m│   │   │   [0m[94mif[0m [95mnot[0m df_opps.empty:                                              [31m [0m
+[31m [0m [31m❱ [0m103 [2m│   │   │   │   [0mst.dataframe([1;4mdf_opps[[[0m[1;4;33m"[0m[1;4;33mPartido[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mMercado[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mProb_Modelo[0m[1;4;33m"[0m[1;4m, [0m[1;4;33m"[0m[1;4;33mCu[0m [31m [0m
+[31m [0m   [2m104 [0m[2m│   │   │   [0m[94melse[0m:                                                              [31m [0m
+[31m [0m   [2m105 [0m[2m│   │   │   │   [0mst.info([33m"[0m[33mSin oportunidades con umbral EV > 2.5[0m[33m% e[0m[33mn este moment[0m [31m [0m
+[31m [0m   [2m106 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/[0m[1;33mfr[0m [31m [0m
+[31m [0m [1;33mame.py[0m:[94m4119[0m in [92m__getitem__[0m                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 4116 [0m[2m│   │   [0m[94melse[0m:                                                                [31m [0m
+[31m [0m   [2m 4117 [0m[2m│   │   │   [0m[94mif[0m is_iterator(key):                                             [31m [0m
+[31m [0m   [2m 4118 [0m[2m│   │   │   │   [0mkey = [96mlist[0m(key)                                              [31m [0m
+[31m [0m [31m❱ [0m 4119 [2m│   │   │   [0mindexer = [1;4;96mself[0m[1;4m.columns._get_indexer_strict(key, [0m[1;4;33m"[0m[1;4;33mcolumns[0m[1;4;33m"[0m[1;4m)[0m[[94m1[0m]    [31m [0m
+[31m [0m   [2m 4120 [0m[2m│   │   [0m                                                                     [31m [0m
+[31m [0m   [2m 4121 [0m[2m│   │   [0m[2m# take() does not accept boolean indexers[0m                            [31m [0m
+[31m [0m   [2m 4122 [0m[2m│   │   [0m[94mif[0m [96mgetattr[0m(indexer, [33m"[0m[33mdtype[0m[33m"[0m, [94mNone[0m) == [96mbool[0m:                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/in[0m [31m [0m
+[31m [0m [2;33mdexes/[0m[1;33mbase.py[0m:[94m6212[0m in [92m_get_indexer_strict[0m                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m6209 [0m[2m│   │   [0m[94melse[0m:                                                                 [31m [0m
+[31m [0m   [2m6210 [0m[2m│   │   │   [0mkeyarr, indexer, new_indexer = [96mself[0m._reindex_non_unique(keyarr)   [31m [0m
+[31m [0m   [2m6211 [0m[2m│   │   [0m                                                                      [31m [0m
+[31m [0m [31m❱ [0m6212 [2m│   │   [0m[1;4;96mself[0m[1;4m._raise_if_missing(keyarr, indexer, axis_name)[0m                    [31m [0m
+[31m [0m   [2m6213 [0m[2m│   │   [0m                                                                      [31m [0m
+[31m [0m   [2m6214 [0m[2m│   │   [0mkeyarr = [96mself[0m.take(indexer)                                           [31m [0m
+[31m [0m   [2m6215 [0m[2m│   │   [0m[94mif[0m [96misinstance[0m(key, Index):                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/pandas/core/in[0m [31m [0m
+[31m [0m [2;33mdexes/[0m[1;33mbase.py[0m:[94m6264[0m in [92m_raise_if_missing[0m                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m6261 [0m[2m│   │   │   │   [0m[94mraise[0m [96mKeyError[0m([33mf[0m[33m"[0m[33mNone of [[0m[33m{[0mkey[33m}[0m[33m] are in the [[0m[33m{[0maxis_name[33m}[0m[33m][0m[33m"[0m)   [31m [0m
+[31m [0m   [2m6262 [0m[2m│   │   │   [0m                                                                  [31m [0m
+[31m [0m   [2m6263 [0m[2m│   │   │   [0mnot_found = [96mlist[0m(ensure_index(key)[missing_mask.nonzero()[[94m0[0m]].uni [31m [0m
+[31m [0m [31m❱ [0m6264 [2m│   │   │   [0m[1;4;94mraise[0m[1;4m [0m[1;4;96mKeyError[0m[1;4m([0m[1;4;33mf[0m[1;4;33m"[0m[1;4;33m{[0m[1;4mnot_found[0m[1;4;33m}[0m[1;4;33m not in index[0m[1;4;33m"[0m[1;4m)[0m                       [31m [0m
+[31m [0m   [2m6265 [0m[2m│   [0m                                                                          [31m [0m
+[31m [0m   [2m6266 [0m[2m│   [0m[1;95m@overload[0m                                                                 [31m [0m
+[31m [0m   [2m6267 [0m[2m│   [0m[94mdef[0m[90m [0m[92m_get_indexer_non_comparable[0m(                                          [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mKeyError: [0m[32m"[0m[32m[[0m[32m'Cuota_Mercado'[0m[32m][0m[32m not in index"[0m
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.38:8501
+  External URL: http://181.68.173.247:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m27[0m in [92m<module>[0m                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 24 [0m                                                                               [31m [0m
+[31m [0m   [2m 25 [0m[94mif[0m [33m"[0m[33mcalibrated_model[0m[33m"[0m [95mnot[0m [95min[0m st.session_state:                                 [31m [0m
+[31m [0m   [2m 26 [0m[2m│   [0mst.session_state.calibrated_model = [94mNone[0m                                   [31m [0m
+[31m [0m [31m❱ [0m 27                                                                                [31m [0m
+[31m [0m   [2m 28 [0m[2m# Función para verificar si el daemon corre en segundo plano[0m                   [31m [0m
+[31m [0m   [2m 29 [0m[94mdef[0m[90m [0m[92mis_daemon_running[0m():                                                       [31m [0m
+[31m [0m   [2m 30 [0m[2m│   [0m[94mfor[0m p [95min[0m psutil.process_iter([[33m'[0m[33mname[0m[33m'[0m, [33m'[0m[33mcmdline[0m[33m'[0m]):                         [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0m[32m'TreasuryManager'[0m object has no attribute [32m'locked_cash'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m27[0m in [92m<module>[0m                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 24 [0m[94mwith[0m col2:                                                                     [31m [0m
+[31m [0m   [2m 25 [0m[2m│   [0mst.metric([33m"[0m[33mEfectivo Disponible[0m[33m"[0m, [33mf[0m[33m"[0m[33m$[0m[33m{[0mtreasury.available_cash[33m:[0m[33m,.0f[0m[33m}[0m[33m"[0m)       [31m [0m
+[31m [0m   [2m 26 [0m[94mwith[0m col3:                                                                     [31m [0m
+[31m [0m [31m❱ [0m 27 [2m│   [0mst.metric([33m"[0m[33mCapital Bloqueado (Risk)[0m[33m"[0m, [33mf[0m[33m"[0m[33m$[0m[33m{[0m[1;4mtreasury.locked_cash[0m[33m:[0m[33m,.0f[0m[33m}[0m[33m"[0m)     [31m [0m
+[31m [0m   [2m 28 [0m[94mwith[0m col4:                                                                     [31m [0m
+[31m [0m   [2m 29 [0m[2m│   [0mst.metric([33m"[0m[33mDrawdown Actual[0m[33m"[0m, [33m"[0m[33m0.0[0m[33m%[0m[33m (Seguro)[0m[33m"[0m)                              [31m [0m
+[31m [0m   [2m 30 [0m                                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0m[32m'TreasuryManager'[0m object has no attribute [32m'locked_cash'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m27[0m in [92m<module>[0m                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 24 [0m[94mwith[0m col2:                                                                     [31m [0m
+[31m [0m   [2m 25 [0m[2m│   [0mst.metric([33m"[0m[33mEfectivo Disponible[0m[33m"[0m, [33mf[0m[33m"[0m[33m$[0m[33m{[0mtreasury.available_cash[33m:[0m[33m,.0f[0m[33m}[0m[33m"[0m)       [31m [0m
+[31m [0m   [2m 26 [0m[94mwith[0m col3:                                                                     [31m [0m
+[31m [0m [31m❱ [0m 27 [2m│   [0mst.metric([33m"[0m[33mCapital Bloqueado (Risk)[0m[33m"[0m, [33mf[0m[33m"[0m[33m$[0m[33m{[0m[1;4mtreasury.locked_cash[0m[33m:[0m[33m,.0f[0m[33m}[0m[33m"[0m)     [31m [0m
+[31m [0m   [2m 28 [0m[94mwith[0m col4:                                                                     [31m [0m
+[31m [0m   [2m 29 [0m[2m│   [0mst.metric([33m"[0m[33mDrawdown Actual[0m[33m"[0m, [33m"[0m[33m0.0[0m[33m%[0m[33m (Seguro)[0m[33m"[0m)                              [31m [0m
+[31m [0m   [2m 30 [0m                                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0m[32m'TreasuryManager'[0m object has no attribute [32m'locked_cash'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mexec_code.py[0m:[94m136[0m in [92mexec_func_with_error_handling[0m                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/venv/lib/python3.11/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2;33mime/scriptrunner/[0m[1;33mscript_runner.py[0m:[94m924[0m in [92mcode_to_exec[0m                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2;33m/Users/juhama/Desktop/KAI_SYNDICATE/[0m[1;33mapp.py[0m:[94m41[0m in [92m<module>[0m                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 38 [0m[2m│   [0mdata = []                                                                  [31m [0m
+[31m [0m   [2m 39 [0m[2m│   [0m[94mfor[0m p [95min[0m positions:                                                        [31m [0m
+[31m [0m   [2m 40 [0m[2m│   │   [0mdata.append({                                                          [31m [0m
+[31m [0m [31m❱ [0m 41 [2m│   │   │   [0m[33m"[0m[33mID[0m[33m"[0m: [1;4mp.id[0m,                                                        [31m [0m
+[31m [0m   [2m 42 [0m[2m│   │   │   [0m[33m"[0m[33mPartido[0m[33m"[0m: p.match_name,                                           [31m [0m
+[31m [0m   [2m 43 [0m[2m│   │   │   [0m[33m"[0m[33mLiga[0m[33m"[0m: p.league,                                                  [31m [0m
+[31m [0m   [2m 44 [0m[2m│   │   │   [0m[33m"[0m[33mMercado[0m[33m"[0m: p.market,                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0m[32m'DBPosition'[0m object has no attribute [32m'id'[0m

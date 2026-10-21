@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/services/daemon.py", line 4, in <module>
+    from core.quant.autobot import QuantAutobot
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/core/quant/autobot.py", line 4, in <module>
+    from core.scrapers.live_betano_scraper import LiveBetanoScraper
+ModuleNotFoundError: No module named 'core.scrapers.live_betano_scraper'
+Traceback (most recent call last):
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/services/daemon.py", line 4, in <module>
+    from core.quant.autobot import QuantAutobot
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/core/quant/autobot.py", line 4, in <module>
+    from core.scrapers.live_betano_scraper import LiveBetanoScraper
+ModuleNotFoundError: No module named 'core.scrapers.live_betano_scraper'
+Traceback (most recent call last):
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/services/daemon.py", line 4, in <module>
+    from core.quant.autobot import QuantAutobot
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/core/quant/autobot.py", line 4, in <module>
+    from core.scrapers.live_betano_scraper import LiveBetanoScraper
+ModuleNotFoundError: No module named 'core.scrapers.live_betano_scraper'
+Traceback (most recent call last):
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/services/daemon.py", line 4, in <module>
+    from core.quant.autobot import QuantAutobot
+  File "/Users/juhama/Desktop/KAI_SYNDICATE/core/quant/autobot.py", line 4, in <module>
+    from core.scrapers.live_betano_scraper import LiveBetanoScraper
+ModuleNotFoundError: No module named 'core.scrapers.live_betano_scraper'
